@@ -8,6 +8,7 @@ For simplicity we are assuming:
 - At the end of the purchase the buyer will still only own one house i.e. they intent to sell their current home at the same date they buy the new one
 
 Sources: 
+
 https://aspenwoolf.co.uk/what-is-stamp-duty-2019/
 
 https://www.propertyinvestmentsuk.co.uk/stamp-duty-calculator/#rates
