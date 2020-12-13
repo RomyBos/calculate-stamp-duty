@@ -13,9 +13,10 @@ public class StampDutyCalculator {
         for (HashMap.Entry<Double, Double> entry : taxRates.entrySet()) {
             double portionValue = entry.getKey();
             double portionTax = entry.getValue();
+            double portion = (portionValue - calculated);
             if (propertyValue > portionValue){    // Calculate the tax for this portion
-                totalSDLT += (portionValue - calculated) * portionTax;
-                calculated += (portionValue - calculated);
+                totalSDLT += portion * portionTax;
+                calculated += portion;
             } else if (propertyValue <= portionValue) {   // Calculate the tax for the remaining amount in this portion
                 totalSDLT += (propertyValue - calculated) * portionTax;
                 break;
@@ -30,6 +31,7 @@ public class StampDutyCalculator {
         taxRates.put(125000., 0.);
         taxRates.put(250000., 0.02);
         taxRates.put(925000., 0.05);
+        taxRates.put(1500000., 0.10);
 
         return taxRates;
     }

@@ -19,7 +19,7 @@ public class StampDutyCalculatorTest {
     }
 
     @Test
-    public void Given_PropertyValue_When_ValueBetween125000And250000_Then_2PercentTaxApplied() {
+    public void Given_PropertyValue_When_Between125000And250000_Then_2PercentTaxApplied() {
         StampDutyCalculator stCalculator = new StampDutyCalculator();
         assertEquals(1500, stCalculator.calculateTax(200000));
     }
@@ -31,7 +31,7 @@ public class StampDutyCalculatorTest {
     }
 
     @Test
-    public void Given_PropertyValue_When_ValueBetween250000And925000_Then_5PercentTaxApplied() {
+    public void Given_PropertyValue_When_Between250000And925000_Then_5PercentTaxApplied() {
         StampDutyCalculator stCalculator = new StampDutyCalculator();
         assertEquals(25000, stCalculator.calculateTax(700000));
     }
@@ -40,6 +40,18 @@ public class StampDutyCalculatorTest {
     public void Given_PropertyValue_When_EqualTo925000_Then_5PercentTaxApplied() {
         StampDutyCalculator stCalculator = new StampDutyCalculator();
         assertEquals(36250, stCalculator.calculateTax(925000));
+    }
+
+    @Test
+    public void Given_PropertyValue_When_Between925000And1500000_Then_5PercentTaxApplied() {
+        StampDutyCalculator stCalculator = new StampDutyCalculator();
+        assertEquals(43750, stCalculator.calculateTax(1000000));
+    }
+
+    @Test
+    public void Given_PropertyValue_When_EqualTo1500000_Then_5PercentTaxApplied() {
+        StampDutyCalculator stCalculator = new StampDutyCalculator();
+        assertEquals(93750, stCalculator.calculateTax(1500000));
     }
 
 }
