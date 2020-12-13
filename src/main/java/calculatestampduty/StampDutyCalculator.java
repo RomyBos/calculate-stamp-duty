@@ -32,6 +32,7 @@ public class StampDutyCalculator {
         taxRates.put(250000., 0.02);
         taxRates.put(925000., 0.05);
         taxRates.put(1500000., 0.10);
+        taxRates.put(Double.POSITIVE_INFINITY, 0.12);
 
         return taxRates;
     }
