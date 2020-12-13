@@ -39,7 +39,7 @@ public class StampDutyCalculatorTest {
     @Test
     public void Given_PropertyValue_When_EqualTo925000_Then_5PercentTaxApplied() {
         StampDutyCalculator stCalculator = new StampDutyCalculator();
-        assertEquals(36350, stCalculator.calculateTax(925000));
+        assertEquals(36250, stCalculator.calculateTax(925000));
     }
 
 }
