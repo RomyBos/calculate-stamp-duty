@@ -22,6 +22,7 @@ public class StampDutyCalculator {
                 break;
             }
         }
+        System.out.println("The Stamp Duty Land Tax for this property is: " + (int)totalSDLT);
         return totalSDLT;
     }
 
