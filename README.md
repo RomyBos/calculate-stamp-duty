@@ -1,4 +1,8 @@
 # Calculate Stamp Duty Land Tax
+I created this for a job interview as a developer.
+
+---
+
 This calculation is based on the rates of 2019.
 
 For simplicity we are assuming:
@@ -10,5 +14,4 @@ For simplicity we are assuming:
 Sources: 
 
 https://aspenwoolf.co.uk/what-is-stamp-duty-2019/
-
 https://www.propertyinvestmentsuk.co.uk/stamp-duty-calculator/#rates
